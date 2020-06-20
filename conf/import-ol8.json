@@ -1,0 +1,10 @@
+[
+    {
+        "Description": "Oracle Linux 7.6 x86_64 root disk",
+        "Format": "vmdk",
+        "UserBucket": {
+            "S3Bucket": "<your_bucket_name>",
+            "S3Key": "ol8-x86_64-base-disk001.vmdk"
+        }
+    }
+]

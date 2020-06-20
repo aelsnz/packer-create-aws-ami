@@ -1,0 +1,46 @@
+20-Jun-2020:23:05:22 : =======================
+20-Jun-2020:23:05:22 : Start with args as - 
+20-Jun-2020:23:07:22 : =======================
+20-Jun-2020:23:07:22 : Start with args as - 
+20-Jun-2020:23:09:12 : =======================
+20-Jun-2020:23:09:12 : Start with args as - 
+20-Jun-2020:23:09:12 : Not enough input values..
+20-Jun-2020:23:09:12 : err. wrong arguments supplied
+20-Jun-2020:23:09:12 : =============================
+20-Jun-2020:23:21:33 : =======================
+20-Jun-2020:23:21:33 : Start with args as - 
+20-Jun-2020:23:21:33 : Not enough input values..
+20-Jun-2020:23:21:33 : err.
+20-Jun-2020:23:21:33 : =============================
+20-Jun-2020:23:22:07 : =======================
+20-Jun-2020:23:22:07 : Start with args as - -o
+20-Jun-2020:23:22:07 : Building ol6
+20-Jun-2020:23:23:16 : =======================
+20-Jun-2020:23:23:16 : Start with args as - -o
+20-Jun-2020:23:23:16 : Building ol6
+20-Jun-2020:23:23:27 : ....
+20-Jun-2020:23:23:27 : Caught signal ${1} .... cleaning up...
+20-Jun-2020:23:23:27 : done... exit
+20-Jun-2020:23:26:12 : =======================
+20-Jun-2020:23:26:12 : Building ol6
+20-Jun-2020:23:26:22 : ....
+20-Jun-2020:23:26:22 : Caught signal .... cleaning up...
+20-Jun-2020:23:26:22 : done... exit
+20-Jun-2020:23:26:53 : =======================
+20-Jun-2020:23:26:53 : Building ol6
+20-Jun-2020:23:29:17 : ....
+20-Jun-2020:23:29:17 : Caught signal .... cleaning up...
+20-Jun-2020:23:29:17 : done... exit
+20-Jun-2020:23:29:22 : =======================
+20-Jun-2020:23:29:22 : Building ol6
+-rw-r--r--  1 aelsnz  staff  728118784 20 Jun 23:46 output/ol6/oracle-6.10-x86_64-base-disk001.vmdk
+-rwx------  1 aelsnz  staff       7055 20 Jun 23:45 output/ol6/oracle-6.10-x86_64-base.ovf
+20-Jun-2020:23:46:59 : Done.
+20-Jun-2020:23:57:41 : =======================
+20-Jun-2020:23:57:41 : Building ol8
+21-Jun-2020:00:06:06 : =======================
+21-Jun-2020:00:06:06 : Building ol8
+-rw-r--r--  1 aelsnz  staff  942008320 21 Jun 00:17 output/ol8/ol8-x86_64-base-disk001.vmdk
+-rwx------  1 aelsnz  staff       7023 21 Jun 00:16 output/ol8/ol8-x86_64-base.ovf
+21-Jun-2020:00:17:27 : Done.
+21-Jun-2020:00:17:27 : Upload file to s3:   aws s3 cp output//*.vmdk s3:///   

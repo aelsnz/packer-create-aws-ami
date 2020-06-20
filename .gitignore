@@ -6,3 +6,18 @@ crash.log
 
 # For built boxes
 *.box
+
+# ignore iso files in software folder
+software/*.iso
+software/*.tgz
+
+# ignore the build images that will be uploaded (imported)
+output/ol5/*.vmdk
+output/ol5/*.ovf
+output/ol6/*.vmdk
+output/ol6/*.ovf
+output/ol7/*.vmdk
+output/ol7/*.ovf
+output/ol8/*.vmdk
+output/ol8/*.ovf
+

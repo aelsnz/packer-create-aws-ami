@@ -1,0 +1,53 @@
+{
+  "builders": [
+    {
+      "boot_command": [
+        "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks-ol6.cfg<enter><wait>"
+      ],
+      "boot_wait": "10s",
+      "disk_size": 12288,
+      "guest_additions_mode": "disable",
+      "guest_os_type": "Oracle_64",
+      "http_directory": "http",
+      "iso_checksum": "a57fe73747227cc947426cf1d8eb21a1",
+      "iso_checksum_type": "md5",
+      "iso_url": "software/OracleLinux-R6-U10-Server-x86_64.iso",
+      "ssh_password": "ec2-user",
+      "ssh_port": 22,
+      "ssh_username": "ec2-user",
+      "ssh_wait_timeout": "10000s",
+      "output_directory": "output/ol6",
+      "shutdown_command": "echo 'ec2-user'|sudo -S /sbin/halt -h -p",
+      "type": "virtualbox-iso",
+      "hard_drive_interface": "sata",
+      "sata_port_count": 4,
+      "vboxmanage": [
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--memory",
+          "1024"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--cpus",
+          "1"
+        ]
+      ],
+      "vm_name": "ol6-x86_64-base"
+    }
+  ],
+  "provisioners": [
+    {
+      "environment_vars": [],
+      "execute_command": "echo 'ec2-user' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
+      "scripts": [
+        "bin/add-configure-software.sh",
+        "bin/cleanup.sh",
+        "bin/minimize.sh"
+      ],
+      "type": "shell"
+    }
+  ]
+}
