@@ -115,17 +115,35 @@ import_ami ()
   perl -p -i -e "s/IMPORT_S3_BUCKET/${s3_bucket}/g" conf/aws-import-tmp.json
   perl -p -i -e "s/VMDK_DISK_NAME/${v_option}-x86_64-base-disk001.vmdk/g" conf/aws-import-tmp.json
 
+  ## toDO - OL8 does not work that well on import-image, but import-snapshot does work
+  #  examples to add 
+  #  aws ec2 import-snapshot --description "Test ol8" --disk-container "file://aws-import-tmp-ol8.json"
+  #  aws ec2 describe-import-snapshot-tasks --import-task-ids import-snap-01709bbd7181ee610
+  # after above create image then instance works.
+
   aws ec2 import-image --region ${region} --disk-containers "file://conf/aws-import-tmp.json" | jq '.ImportTaskId' > /tmp/$$.taskid
-  local taskId=`cat /tmp/$$.taskid`
+  local taskId=`cat /tmp/$$.taskid | sed 's/\"//g'`
+
   while true; do
-      local taskStatus=`aws ec2 describe-import-image-tasks --import-task-ids ${taskId} | jq '.ImportImageTasks[].Status'`
+      local taskDetail=`aws ec2 describe-import-image-tasks --import-task-ids ${taskId}`
+      local taskStatus=`echo $taskDetail | jq '.ImportImageTasks[].Status'  | sed 's/\"//g' `
+      
+      # debug by logging taskDetail status checks
+      echo $taskDetail >> $log
+
       if [ "${taskStatus}" == "completed" ]; then
         addLog "Import complete !"
         break
+      elif [ "${taskStatus}" == "active" ]; then
+         addLog "Import status - ${taskStatus}"
+         addLog ".."
+         sleep 60       
+      else ## something wrong... 
+         addLog "Import ending - ${taskStatus}"
+         break
       fi
-      addLog "Import status - ${taskStatus}"
-      sleep 60
   done
+  rm /tmp/$$.taskid
   addLog "Done."
 }
 

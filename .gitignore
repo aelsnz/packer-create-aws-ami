@@ -21,3 +21,8 @@ output/ol7/*.ovf
 output/ol8/*.vmdk
 output/ol8/*.ovf
 
+# ignore the build.log
+build.log
+
+# ignore the temporary import file
+conf/aws-import-tmp.json

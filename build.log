@@ -44,3 +44,175 @@
 -rwx------  1 aelsnz  staff       7023 21 Jun 00:16 output/ol8/ol8-x86_64-base.ovf
 21-Jun-2020:00:17:27 : Done.
 21-Jun-2020:00:17:27 : Upload file to s3:   aws s3 cp output//*.vmdk s3:///   
+21-Jun-2020:08:06:00 : =======================
+21-Jun-2020:08:06:00 : Building ol8
+-rw-r--r--  1 aelsnz  staff  942973952 21 Jun 08:17 output/ol8/ol8-x86_64-base-disk001.vmdk
+-rwx------  1 aelsnz  staff       7023 21 Jun 08:16 output/ol8/ol8-x86_64-base.ovf
+21-Jun-2020:08:17:21 : Done.
+21-Jun-2020:08:17:21 : Upload file to s3:   aws s3 cp output/ol8/ol8-x86_64-base-disk001.vmdk s3://oraclekiwi-amis/   
+21-Jun-2020:08:17:45 : Done.
+21-Jun-2020:08:17:45 : Import Start for ol8 image using region as ap-southeast-2
+21-Jun-2020:08:17:47 : Import status - 
+21-Jun-2020:08:18:48 : Import status - 
+21-Jun-2020:08:19:49 : Import status - 
+21-Jun-2020:08:20:49 : Import status - 
+21-Jun-2020:08:21:50 : Import status - 
+21-Jun-2020:08:22:43 : ....
+21-Jun-2020:08:22:43 : Caught signal .... cleaning up...
+21-Jun-2020:08:22:43 : done... exit
+21-Jun-2020:08:45:23 : =======================
+21-Jun-2020:08:45:23 : Building ol8
+-rw-r--r--  1 aelsnz  staff  1132161024 21 Jun 09:02 output/ol8/ol8-x86_64-base-disk001.vmdk
+-rwx------  1 aelsnz  staff        7023 21 Jun 09:00 output/ol8/ol8-x86_64-base.ovf
+21-Jun-2020:09:02:23 : Done.
+21-Jun-2020:09:02:23 : Upload file to s3:   aws s3 cp output/ol8/ol8-x86_64-base-disk001.vmdk s3://oraclekiwi-amis/   
+21-Jun-2020:09:02:49 : Done.
+21-Jun-2020:09:02:49 : Import Start for ol8 image using region as ap-southeast-2
+21-Jun-2020:09:02:51 : Import status - "completed"
+"deleted"
+"active"
+21-Jun-2020:09:27:03 : =======================
+21-Jun-2020:09:27:03 : Building ol8
+21-Jun-2020:09:27:24 : ....
+21-Jun-2020:09:27:24 : Caught signal .... cleaning up...
+21-Jun-2020:09:27:24 : done... exit
+21-Jun-2020:09:27:26 : =======================
+21-Jun-2020:09:27:26 : Building ol8
+21-Jun-2020:10:04:52 : =======================
+21-Jun-2020:10:04:52 : Building ol8
+-rw-r--r--  1 aelsnz  staff  1359672832 21 Jun 10:26 output/ol8/ol8-x86_64-base-disk001.vmdk
+-rwx------  1 aelsnz  staff        7024 21 Jun 10:24 output/ol8/ol8-x86_64-base.ovf
+21-Jun-2020:10:26:15 : Done.
+21-Jun-2020:10:26:15 : Upload file to s3:   aws s3 cp output/ol8/ol8-x86_64-base-disk001.vmdk s3://oraclekiwi-amis/   
+21-Jun-2020:10:26:47 : Done.
+21-Jun-2020:10:26:47 : Import Start for ol8 image using region as ap-southeast-2
+21-Jun-2020:10:26:49 : {
+21-Jun-2020:10:26:49 : Import status - "active"
+21-Jun-2020:12:52:03 : =======================
+21-Jun-2020:12:52:03 : Building ol8
+-rw-r--r--  1 aelsnz  staff  1283766784 21 Jun 13:12 output/ol8/ol8-x86_64-base-disk001.vmdk
+-rwx------  1 aelsnz  staff        7024 21 Jun 13:11 output/ol8/ol8-x86_64-base.ovf
+21-Jun-2020:13:12:33 : Done.
+21-Jun-2020:13:12:33 : Upload file to s3:   aws s3 cp output/ol8/ol8-x86_64-base-disk001.vmdk s3://oraclekiwi-amis/   
+21-Jun-2020:13:28:28 : =======================
+21-Jun-2020:13:28:28 : Building ol8
+-rw-r--r--  1 aelsnz  staff  1297294848 21 Jun 13:48 output/ol8/ol8-x86_64-base-disk001.vmdk
+-rwx------  1 aelsnz  staff        7024 21 Jun 13:47 output/ol8/ol8-x86_64-base.ovf
+21-Jun-2020:13:48:42 : Done.
+21-Jun-2020:13:48:42 : Upload file to s3:   aws s3 cp output/ol8/ol8-x86_64-base-disk001.vmdk s3://oraclekiwi-amis/   
+21-Jun-2020:13:49:11 : Done.
+21-Jun-2020:13:49:11 : Import Start for ol8 image using region as ap-southeast-2
+21-Jun-2020:13:49:13 : {
+21-Jun-2020:13:49:13 : Import status - "active"
+21-Jun-2020:13:49:13 : Done.
+21-Jun-2020:13:49:13 : All Done.
+21-Jun-2020:13:49:13 : =======================
+21-Jun-2020:14:13:26 : =======================
+21-Jun-2020:14:13:26 : Building ol8
+-rw-r--r--  1 aelsnz  staff  1162765824 21 Jun 14:39 output/ol8/ol8-x86_64-base-disk001.vmdk
+-rwx------  1 aelsnz  staff        7024 21 Jun 14:38 output/ol8/ol8-x86_64-base.ovf
+21-Jun-2020:14:39:24 : Done.
+21-Jun-2020:14:39:24 : Upload file to s3:   aws s3 cp output/ol8/ol8-x86_64-base-disk001.vmdk s3://oraclekiwi-amis/   
+21-Jun-2020:14:39:50 : Done.
+21-Jun-2020:14:39:50 : Import Start for ol8 image using region as ap-southeast-2
+21-Jun-2020:14:39:52 : {
+21-Jun-2020:14:39:52 : Import status - active
+21-Jun-2020:14:39:52 : ..
+21-Jun-2020:14:40:53 : {
+21-Jun-2020:14:40:53 : Import status - active
+21-Jun-2020:14:40:53 : ..
+21-Jun-2020:14:41:54 : {
+21-Jun-2020:14:41:54 : Import status - active
+21-Jun-2020:14:41:54 : ..
+21-Jun-2020:14:42:54 : {
+21-Jun-2020:14:42:54 : Import status - active
+21-Jun-2020:14:42:54 : ..
+21-Jun-2020:14:43:55 : {
+21-Jun-2020:14:43:55 : Import status - active
+21-Jun-2020:14:43:55 : ..
+21-Jun-2020:14:44:56 : {
+21-Jun-2020:14:44:56 : Import status - active
+21-Jun-2020:14:44:56 : ..
+21-Jun-2020:14:45:57 : {
+21-Jun-2020:14:45:57 : Import ending - deleting
+21-Jun-2020:14:45:57 : Done.
+21-Jun-2020:14:45:57 : All Done.
+21-Jun-2020:14:45:57 : =======================
+21-Jun-2020:15:33:54 : =======================
+21-Jun-2020:15:33:54 : Building ol8
+-rw-r--r--  1 aelsnz  staff  894523904 21 Jun 15:48 output/ol8/ol8-x86_64-base-disk001.vmdk
+-rwx------  1 aelsnz  staff       7024 21 Jun 15:47 output/ol8/ol8-x86_64-base.ovf
+21-Jun-2020:15:48:54 : Done.
+21-Jun-2020:15:48:54 : Upload file to s3:   aws s3 cp output/ol8/ol8-x86_64-base-disk001.vmdk s3://oraclekiwi-amis/   
+21-Jun-2020:15:49:17 : Done.
+21-Jun-2020:15:49:17 : Import Start for ol8 image using region as ap-southeast-2
+21-Jun-2020:15:49:19 : {
+21-Jun-2020:15:49:19 : Import status - active
+21-Jun-2020:15:49:19 : ..
+21-Jun-2020:15:50:20 : {
+21-Jun-2020:15:50:20 : Import status - active
+21-Jun-2020:15:50:20 : ..
+21-Jun-2020:15:51:21 : {
+21-Jun-2020:15:51:21 : Import status - active
+21-Jun-2020:15:51:21 : ..
+21-Jun-2020:15:52:22 : {
+21-Jun-2020:15:52:22 : Import status - active
+21-Jun-2020:15:52:22 : ..
+21-Jun-2020:15:53:22 : {
+21-Jun-2020:15:53:22 : Import status - active
+21-Jun-2020:15:53:22 : ..
+21-Jun-2020:15:54:23 : {
+21-Jun-2020:15:54:23 : Import status - active
+21-Jun-2020:15:54:23 : ..
+21-Jun-2020:15:55:24 : {
+21-Jun-2020:15:55:24 : Import ending - deleting
+21-Jun-2020:15:55:24 : Done.
+21-Jun-2020:15:55:24 : All Done.
+21-Jun-2020:15:55:24 : =======================
+21-Jun-2020:17:45:19 : =======================
+21-Jun-2020:17:45:19 : Building ol5
+-rw-r--r--  1 aelsnz  staff  863851520 21 Jun 18:00 output/ol5/ol5-x86_64-base-disk001.vmdk
+-rwx------  1 aelsnz  staff       6402 21 Jun 17:58 output/ol5/ol5-x86_64-base.ovf
+21-Jun-2020:18:00:23 : Done.
+21-Jun-2020:18:00:23 : Upload file to s3:   aws s3 cp output/ol5/ol5-x86_64-base-disk001.vmdk s3://oraclekiwi-amis/   
+21-Jun-2020:18:00:44 : Done.
+21-Jun-2020:18:00:44 : Import Start for ol5 image using region as ap-southeast-2
+{ "ImportImageTasks": [ { "ImportTaskId": "import-ami-0150a3afbfebdee57", "Progress": "1", "SnapshotDetails": [], "Status": "active", "StatusMessage": "pending", "Tags": [] } ] }
+21-Jun-2020:18:00:46 : Import status - active
+21-Jun-2020:18:00:46 : ..
+{ "ImportImageTasks": [ { "ImportTaskId": "import-ami-0150a3afbfebdee57", "Progress": "19", "SnapshotDetails": [ { "Description": "Custom ol5 Image", "DiskImageSize": 863851520.0, "Format": "VMDK", "Status": "active", "UserBucket": { "S3Bucket": "oraclekiwi-amis", "S3Key": "ol5-x86_64-base-disk001.vmdk" } } ], "Status": "active", "StatusMessage": "converting", "Tags": [] } ] }
+21-Jun-2020:18:01:47 : Import status - active
+21-Jun-2020:18:01:47 : ..
+{ "ImportImageTasks": [ { "ImportTaskId": "import-ami-0150a3afbfebdee57", "Progress": "19", "SnapshotDetails": [ { "Description": "Custom ol5 Image", "DiskImageSize": 863851520.0, "Format": "VMDK", "Status": "active", "UserBucket": { "S3Bucket": "oraclekiwi-amis", "S3Key": "ol5-x86_64-base-disk001.vmdk" } } ], "Status": "active", "StatusMessage": "converting", "Tags": [] } ] }
+21-Jun-2020:18:02:48 : Import status - active
+21-Jun-2020:18:02:48 : ..
+{ "ImportImageTasks": [ { "ImportTaskId": "import-ami-0150a3afbfebdee57", "Progress": "19", "SnapshotDetails": [ { "Description": "Custom ol5 Image", "DiskImageSize": 863851520.0, "Format": "VMDK", "Status": "active", "UserBucket": { "S3Bucket": "oraclekiwi-amis", "S3Key": "ol5-x86_64-base-disk001.vmdk" } } ], "Status": "active", "StatusMessage": "converting", "Tags": [] } ] }
+21-Jun-2020:18:03:49 : Import status - active
+21-Jun-2020:18:03:49 : ..
+{ "ImportImageTasks": [ { "ImportTaskId": "import-ami-0150a3afbfebdee57", "Progress": "19", "SnapshotDetails": [ { "Description": "Custom ol5 Image", "DiskImageSize": 863851520.0, "Format": "VMDK", "Status": "active", "UserBucket": { "S3Bucket": "oraclekiwi-amis", "S3Key": "ol5-x86_64-base-disk001.vmdk" } } ], "Status": "active", "StatusMessage": "converting", "Tags": [] } ] }
+21-Jun-2020:18:04:49 : Import status - active
+21-Jun-2020:18:04:49 : ..
+{ "ImportImageTasks": [ { "ImportTaskId": "import-ami-0150a3afbfebdee57", "Progress": "22", "SnapshotDetails": [ { "Description": "Custom ol5 Image", "DiskImageSize": 863851520.0, "Format": "VMDK", "Status": "completed", "UserBucket": { "S3Bucket": "oraclekiwi-amis", "S3Key": "ol5-x86_64-base-disk001.vmdk" } } ], "Status": "active", "StatusMessage": "updating", "Tags": [] } ] }
+21-Jun-2020:18:05:50 : Import status - active
+21-Jun-2020:18:05:50 : ..
+{ "ImportImageTasks": [ { "Architecture": "x86_64", "ImportTaskId": "import-ami-0150a3afbfebdee57", "LicenseType": "BYOL", "Platform": "Linux", "Progress": "29", "SnapshotDetails": [ { "Description": "Custom ol5 Image", "DeviceName": "/dev/sda1", "DiskImageSize": 863851520.0, "Format": "VMDK", "Status": "completed", "UserBucket": { "S3Bucket": "oraclekiwi-amis", "S3Key": "ol5-x86_64-base-disk001.vmdk" } } ], "Status": "active", "StatusMessage": "updating", "Tags": [] } ] }
+21-Jun-2020:18:06:51 : Import status - active
+21-Jun-2020:18:06:51 : ..
+{ "ImportImageTasks": [ { "Architecture": "x86_64", "ImportTaskId": "import-ami-0150a3afbfebdee57", "LicenseType": "BYOL", "Platform": "Linux", "Progress": "38", "SnapshotDetails": [ { "Description": "Custom ol5 Image", "DeviceName": "/dev/sda1", "DiskImageSize": 863851520.0, "Format": "VMDK", "Status": "completed", "UserBucket": { "S3Bucket": "oraclekiwi-amis", "S3Key": "ol5-x86_64-base-disk001.vmdk" } } ], "Status": "active", "StatusMessage": "preparing to boot", "Tags": [] } ] }
+21-Jun-2020:18:07:52 : Import status - active
+21-Jun-2020:18:07:52 : ..
+{ "ImportImageTasks": [ { "Architecture": "x86_64", "ImportTaskId": "import-ami-0150a3afbfebdee57", "LicenseType": "BYOL", "Platform": "Linux", "Progress": "39", "SnapshotDetails": [ { "Description": "Custom ol5 Image", "DeviceName": "/dev/sda1", "DiskImageSize": 863851520.0, "Format": "VMDK", "Status": "completed", "UserBucket": { "S3Bucket": "oraclekiwi-amis", "S3Key": "ol5-x86_64-base-disk001.vmdk" } } ], "Status": "active", "StatusMessage": "booting", "Tags": [] } ] }
+21-Jun-2020:18:08:53 : Import status - active
+21-Jun-2020:18:08:53 : ..
+{ "ImportImageTasks": [ { "Architecture": "x86_64", "ImportTaskId": "import-ami-0150a3afbfebdee57", "LicenseType": "BYOL", "Platform": "Linux", "Progress": "39", "SnapshotDetails": [ { "Description": "Custom ol5 Image", "DeviceName": "/dev/sda1", "DiskImageSize": 863851520.0, "Format": "VMDK", "Status": "completed", "UserBucket": { "S3Bucket": "oraclekiwi-amis", "S3Key": "ol5-x86_64-base-disk001.vmdk" } } ], "Status": "active", "StatusMessage": "booting", "Tags": [] } ] }
+21-Jun-2020:18:09:54 : Import status - active
+21-Jun-2020:18:09:54 : ..
+{ "ImportImageTasks": [ { "Architecture": "x86_64", "ImportTaskId": "import-ami-0150a3afbfebdee57", "LicenseType": "BYOL", "Platform": "Linux", "Progress": "47", "SnapshotDetails": [ { "Description": "Custom ol5 Image", "DeviceName": "/dev/sda1", "DiskImageSize": 863851520.0, "Format": "VMDK", "Status": "completed", "UserBucket": { "S3Bucket": "oraclekiwi-amis", "S3Key": "ol5-x86_64-base-disk001.vmdk" } } ], "Status": "active", "StatusMessage": "booted", "Tags": [] } ] }
+21-Jun-2020:18:10:54 : Import status - active
+21-Jun-2020:18:10:54 : ..
+{ "ImportImageTasks": [ { "Architecture": "x86_64", "ImportTaskId": "import-ami-0150a3afbfebdee57", "LicenseType": "BYOL", "Platform": "Linux", "Progress": "50", "SnapshotDetails": [ { "Description": "Custom ol5 Image", "DeviceName": "/dev/sda1", "DiskImageSize": 863851520.0, "Format": "VMDK", "Status": "completed", "UserBucket": { "S3Bucket": "oraclekiwi-amis", "S3Key": "ol5-x86_64-base-disk001.vmdk" } } ], "Status": "active", "StatusMessage": "booted", "Tags": [] } ] }
+21-Jun-2020:18:11:55 : Import status - active
+21-Jun-2020:18:11:55 : ..
+21-Jun-2020:18:12:16 : ....
+21-Jun-2020:18:12:16 : Caught signal .... cleaning up...
+21-Jun-2020:18:12:16 : done... exit

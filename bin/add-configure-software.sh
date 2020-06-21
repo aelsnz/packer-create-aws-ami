@@ -11,7 +11,8 @@ VER=`cat /etc/redhat-release`
 ol5="Red Hat Enterprise Linux Server release 5"
 ol6="Red Hat Enterprise Linux Server release 6"
 ol7="Red Hat Enterprise Linux Server release 7"
-ol8="Red Hat Enterprise Linux Server release 8"
+ol8="Red Hat Enterprise Linux release 8"
+     
 
 case "$VER" in 
     "$ol5"*) 
@@ -88,12 +89,13 @@ case "$VER" in
              ;;
 
     "$ol8"*) 
-             yum -y upgrade
+             # yum -y upgrade
              cd /tmp
              yum -y --enablerepo=ol8_addons install cloud-init cloud-utils-growpart python3 unzip
              yum clean all
              curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
              unzip awscli-bundle.zip
+             perl -p -i -e 's/env\ python/env\ python3/g' ./awscli-bundle/install
              ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
              rm -rf awscli-bundle*
              ## Add cloudwatch agent now - could be done as part of userdata as well to get latest
@@ -101,6 +103,7 @@ case "$VER" in
              rpm -U amazon-cloudwatch-agent.rpm
              rm -rf amazon-cloudwatch-agent.rpm
              cd
+             # dracut -f /boot/initramfs-`uname -r`.img `uname -r`
 esac                      
 
 

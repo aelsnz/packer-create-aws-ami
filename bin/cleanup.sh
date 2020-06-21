@@ -5,6 +5,7 @@
 #
 yum clean all
 rm -f /root/anaconda-ks.cfg
+rm -f /root/original-ks.cfg
 rm -f /etc/ssh/ssh_host_*
 rm -f /etc/resolv.conf
 rm -f /root/.bash_history
