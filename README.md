@@ -4,7 +4,10 @@ This repository contains sample code to help you create your own AWS AMI images 
 There are some community versions available, but in some cases it might be better to build your 
 own as you then know what is installed and how it is configured. 
 
-*Oracle Linux 8* - AMI build process is still work in progress.
+*Oracle Linux 8* - AMI build process is still work in progress - the image-import fails with 
+"ClientError: Unable to determine kernel version", but using snapshot-import works, but extra step to create image from snapshot 
+This is on todo list.
+
 
 Extra information can be found in the AWS online documentation here: https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html
 
