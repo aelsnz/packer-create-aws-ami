@@ -1,7 +1,10 @@
 # Description
 
 This repository contains sample code to help you create your own AWS AMI images for Oracle Linux.
-There are some community versions available, but in some cases it might be better to build your 
+
+It is a work in progress - Oracle Linux 5,6 and 7 works, but 8 is still in progress.
+
+There are some community AMI versions available, but in some cases it might be better to build your 
 own as you then know what is installed and how it is configured. 
 
 *Oracle Linux 8* - AMI build process is still work in progress - the image-import fails with 
@@ -9,7 +12,8 @@ own as you then know what is installed and how it is configured.
 This is on todo list.
 
 
-Extra information can be found in the AWS online documentation here: https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html
+Extra information can be found in the AWS online documentation here: 
+*  https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html
 
 
 # Requirements
@@ -68,7 +72,7 @@ software/
 
 # Create the images
 
-*  You can either use the build.sh script provided exmaple:
+*  You can either use the build.sh script provided, exmaple:
 
 ```
 ./build.sh -o ol7 -s3 demo_bucket_name -region us-east-1

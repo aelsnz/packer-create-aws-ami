@@ -118,7 +118,7 @@ import_ami ()
   ## toDO - OL8 does not work that well on import-image, but import-snapshot does work
   #  examples to add 
   #  aws ec2 import-snapshot --description "Test ol8" --disk-container "file://aws-import-tmp-ol8.json"
-  #  aws ec2 describe-import-snapshot-tasks --import-task-ids import-snap-01709bbd7181ee610
+  #  aws ec2 describe-import-snapshot-tasks --import-task-ids import-snap-.....
   # after above create image then instance works.
 
   aws ec2 import-image --region ${region} --disk-containers "file://conf/aws-import-tmp.json" | jq '.ImportTaskId' > /tmp/$$.taskid
