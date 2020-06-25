@@ -3,16 +3,17 @@
 This repository contains sample code to help you create your own AWS AMI images for Oracle Linux.
 
 It is a work in progress - Oracle Linux 5,6 and 7 works, but 8 is still in progress.
+To get the AWS cli working on OL5, Python-2.7.9.tgz is built and installed - ideally you want to use later versions like Oracle Linux 7, but in case you need 5, this might help get you started.
 
 There are community AMI versions available, but in some cases it might be better to build your 
 own as you then know what is installed and how it is configured. 
 
-*Oracle Linux 8* - AMI build process is still work in progress - the image-import fails with 
-"ClientError: Unable to determine kernel version", but using snapshot-import works, but extra step to create image from snapshot 
-This is on todo list.
+* **Oracle Linux 8** - AMI build process is still work in progress - the image-import fails with 
+"ClientError: Unable to determine kernel version", **but using snapshot-import** works! It does however require an extra step to create image from snapshot.  
 
 
-Extra information can be found in the AWS online documentation here: 
+
+Extra information on creating images using the import process can be found in the AWS online documentation here: 
 *  https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html
 
 
@@ -20,6 +21,7 @@ Extra information can be found in the AWS online documentation here:
 
 1.  You must have packer installed - https://www.packer.io/
     Keeping up to date with latest packer versions is highly recommended
+
 2.  Download the Oracle Linux ISO images and place them in the "software" sub folder, example:
 
 ```
@@ -45,7 +47,7 @@ software/
 
     *Important:*
     *  Do not assign static IP address or HOSTNAME, make sure networking is enabled, but using DHCP
-    *  Do not install the Oracle EUK Kernel - use the RedHat kernel during install, AMI creation, then install the Oracle Kernel - EUK
+    *  Do not install the Oracle EUK Kernel - use the RedHat kernel during install, AMI creation, then install the Oracle Kernel.
 
 4.  Create vmimport role and assign policy to it.  You can find the policy documents in the conf/ subfolder
     * role-policy.json
@@ -88,6 +90,7 @@ Notes:
 *  The build process can take time 10-20 min, depending on your system configuration.
 
 Once done you will end up with the images in the output/ol* sub folders
+
 Example:
 
 ```
