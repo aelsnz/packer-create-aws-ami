@@ -1,18 +1,17 @@
 #!/bin/bash -e
 #
-##
-##  This script is a WORK IN PROGRESS
-##
-##
 # DESCRIPTION:
 #   This script can be used to build a specific vmdk disk image using packer for creating
 #   an AWS AMI - see the README in the main folder for more details
 #   Pre-requisites is that packer, virtualbox is installed and that the oracle linux software ISO images
 #   are located in the software subfolder - for OL5 the Python 2.7 source file must be in the software folder as well
-#   Example, to build the ol5 image, just run: ./build ol5
-#   Once done you can import into your AWS account
-# To enable bash Debugging, uncomment next line:
 #
+#   Example, to build the ol7 image, just run: 
+#      ./build.sh -o ol7 -s3 demo_bucket_name -region us-east-1
+#
+#   Once done you can import into your AWS account
+# 
+# To enable bash Debugging, uncomment next line:
 # set -x 
 #
 
@@ -116,14 +115,17 @@ import_ami ()
   perl -p -i -e "s/VMDK_DISK_NAME/${v_option}-x86_64-base-disk001.vmdk/g" conf/aws-import-tmp.json
 
   ## toDO - OL8 does not work that well on import-image, but import-snapshot does work
-  #  examples to add 
+  #  examples commands 
   #  aws ec2 import-snapshot --description "Test ol8" --disk-container "file://aws-import-tmp-ol8.json"
   #  aws ec2 describe-import-snapshot-tasks --import-task-ids import-snap-.....
-  # after above create image then instance works.
+  # After above create image from snapshot, then you can create instance, update to UEK Kernel and you have OL8
+  # bit of a work-around - but seem to work. 
 
+  # Start the import process - this can take time
   aws ec2 import-image --region ${region} --disk-containers "file://conf/aws-import-tmp.json" | jq '.ImportTaskId' > /tmp/$$.taskid
   local taskId=`cat /tmp/$$.taskid | sed 's/\"//g'`
 
+  # Next we monitor the process
   while true; do
       local taskDetail=`aws ec2 describe-import-image-tasks --import-task-ids ${taskId}`
       local taskStatus=`echo $taskDetail | jq '.ImportImageTasks[].Status'  | sed 's/\"//g' `
