@@ -47,7 +47,7 @@ software/
 
     *Important:*
     *  Do not assign static IP address or HOSTNAME, make sure networking is enabled, but using DHCP
-    *  Do not install the Oracle EUK Kernel - use the RedHat kernel during install, AMI creation, then install the Oracle Kernel.
+    *  Do not install the Oracle UEK Kernel - use the RedHat kernel during install, AMI creation, then install the Oracle Kernel.
 
 4.  Create vmimport role and assign policy to it.  You can find the policy documents in the conf/ subfolder
     * role-policy.json
