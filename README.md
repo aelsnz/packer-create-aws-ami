@@ -53,7 +53,7 @@ software/
     * role-policy.json
     * trust-policy.json
 
-    *Impornant:* Update the role policy document to use your specified s3 bucket name
+    *Important:* Update the role policy document to use your specified s3 bucket name
 
     For more detail on this please see: https://docs.aws.amazon.com/vm-import/latest/userguide/vmie_prereqs.html#vmimport-role
 
